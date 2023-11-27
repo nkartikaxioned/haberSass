@@ -1,0 +1,22 @@
+.heading { 
+    @include fontSize($size: 30px, $weight: 600);
+    @include textTransform($transform:uppercase); 
+}
+
+.color-white { color: map-get($map: $colors, $key: whiteColor); }
+li { list-style-type: none; }
+a { text-decoration: none; }
+
+.wrapper {
+    width: 93%;
+     margin: 0 auto; 
+    }
+
+.icon { @include fontSize($size: 0); }
+
+.button {  
+  padding: 15px;
+  border: 1px;
+  transition: .3s;
+  @include textTransform($transform:capitalize); 
+}
