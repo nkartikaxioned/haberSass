@@ -1,0 +1,48 @@
+.ourblog-section {
+    padding-bottom: 80px;
+    @include position($position:relative);
+
+    background: linear-gradient(to Right,#DC6227 50%, #414C52 50%);
+
+    .wrapper {
+        @include flex();
+
+        .investment-solution,.save-money { 
+            width: 50%; 
+
+            .heading--ourblog,li,p { color: map-get($map: $colors, $key: whiteColor); }
+        
+            li,p { margin-top: 20px; }
+
+            p { line-height: 1.5 };
+
+            li::before {
+                content: map-get($map: $iconContent, $key: gear);
+                margin-right: 5px;
+                color: map-get($map: $colors, $key: whiteColor);
+                font-family: "fontAwesome"; 
+            @include fontSize($size: 14px);
+
+            }
+        }
+
+        .save-money {
+            padding: 40px 80px;
+
+            li,p {
+                color: map-get($map: $colors, $key: outlineColor);
+            }
+        }
+
+        .investment-solution { 
+            padding: 40px 0; 
+
+        }
+
+        .button--investment {
+            border: 2px solid map-get($map: $colors, $key: whiteColor);
+            color: map-get($map: $colors, $key: whiteColor);
+            @include position($position:absolute, $bottom: 10%);
+        }
+    }
+}

@@ -21,6 +21,11 @@ a { text-decoration: none; }
     font-family: "fontAwesome"; 
     @include fontSize($size: 25px); 
   }
+
+  &::after {  
+    font-family: "fontAwesome"; 
+    @include fontSize($size: 25px); 
+  }
 }
 
 .button {  
