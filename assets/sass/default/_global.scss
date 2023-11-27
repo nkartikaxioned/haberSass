@@ -3,6 +3,8 @@
     @include textTransform($transform:uppercase); 
 }
 
+body { @include fontSize($weight:600, $family:map-get($map:$fontFamily,$key: robo));  }
+
 .color-white { color: map-get($map: $colors, $key: whiteColor); }
 li { list-style-type: none; }
 a { text-decoration: none; }

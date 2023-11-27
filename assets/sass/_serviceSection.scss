@@ -1,0 +1,44 @@
+.service-section {
+    padding:  90px 0 70px;
+    &__list { 
+        margin-top: 40px;
+        @include flex(); 
+    
+        li { 
+            text-align: center;
+            
+            figure { margin-bottom: 20px; }
+
+            img { border-radius: 70px; }
+
+            .button--service {
+                padding: 13px 15px;
+                margin-top: 20px;
+                display: block;
+                border: 1px solid map-get($map: $colors, $key: colorMedGrey);
+                color: map-get($map: $colors, $key: colorMedGrey);
+            }
+
+            p { width: 90%; }
+         }
+
+         .heading--list { 
+            margin-bottom: 20px;
+            width: 43%;
+            color: map-get($map: $colors, $key: colorMedGrey);
+            @include fontSize($size: 20px); 
+        }
+
+        .service-content {
+            @include flex();
+            @include direction($direction:column);
+            @include align($align:center);
+        }
+    }
+
+    .heading--service { 
+         color: map-get($map: $colors, $key: grey);
+         text-align: center;
+        @include fontSize($size: 38px, $weight:600, $family:map-get($map:$fontFamily,$key: robo)); 
+    }
+}

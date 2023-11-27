@@ -241,6 +241,10 @@ sub {
   font-size: 30px;
   text-transform: uppercase; }
 
+body {
+  font-weight: 600;
+  font-family: "Roboto Condensed"; }
+
 .color-white {
   color: #fff; }
 
@@ -363,8 +367,44 @@ a {
       padding: 10px;
       font-size: 32px; }
     .banner-section .main-slider .heading--banner {
+      margin: 5px;
       text-align: center;
       font-size: 32px;
       font-weight: 600; }
+
+.service-section {
+  padding: 90px 0 70px; }
+  .service-section__list {
+    margin-top: 40px;
+    display: flex; }
+    .service-section__list li {
+      text-align: center; }
+      .service-section__list li figure {
+        margin-bottom: 20px; }
+      .service-section__list li img {
+        border-radius: 70px; }
+      .service-section__list li .button--service {
+        padding: 13px 15px;
+        margin-top: 20px;
+        display: block;
+        border: 1px solid #505D63;
+        color: #505D63; }
+      .service-section__list li p {
+        width: 90%; }
+    .service-section__list .heading--list {
+      margin-bottom: 20px;
+      width: 43%;
+      color: #505D63;
+      font-size: 20px; }
+    .service-section__list .service-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .service-section .heading--service {
+    color: #3F4C54;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: "Roboto Condensed"; }
 
 /*# sourceMappingURL=style.css.map */
