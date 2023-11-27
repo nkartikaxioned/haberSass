@@ -407,4 +407,57 @@ a {
     font-weight: 600;
     font-family: "Roboto Condensed"; }
 
+.project-section {
+  padding: 80px 0 60px;
+  background-color: #E4EBEF;
+  text-align: center; }
+  .project-section__list {
+    display: flex; }
+    .project-section__list li {
+      width: 32%;
+      padding: 10px;
+      background-color: #fff; }
+      .project-section__list li:not(:first-child) {
+        margin-left: 2%; }
+      .project-section__list li figure {
+        width: 100%; }
+        .project-section__list li figure img {
+          margin-bottom: 30px;
+          width: 100%;
+          height: auto;
+          object-fit: cover; }
+      .project-section__list li .heading--content {
+        color: #DC6227;
+        text-transform: capitalize;
+        font-size: 26px;
+        font-weight: 900; }
+      .project-section__list li p {
+        padding: 10px 40px;
+        margin-bottom: 0;
+        color: #3F4C54;
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Roboto Condensed"; }
+    .project-section__list .icon-btn {
+      margin-bottom: 20px; }
+    .project-section__list .play::after {
+      font-family: "fontAwesome";
+      font-size: 16px; }
+    .project-section__list .play::after {
+      content: "";
+      color: #3F4C54; }
+  .project-section .heading--project {
+    margin-bottom: 20px;
+    color: #3F4C54;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: "Roboto Condensed"; }
+  .project-section p {
+    margin-bottom: 50px;
+    color: #3F4C54;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Roboto Condensed"; }
+
 /*# sourceMappingURL=style.css.map */
