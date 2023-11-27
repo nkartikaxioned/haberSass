@@ -4,32 +4,131 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Haber</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" >
   <!--font-awesome link for icons-->
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css" >
 </head>
 
 <body>
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-      
+    <header class="header-section">
+      <div class="wrapper">
+        <h1 class="heading heading--header color-white">haber</h1>
+        <nav class="header-section__nav">
+          <ul class="header-section__nav-list">
+           <li><a href="index.html" title="Home" class="color-white">home</a></li>
+           <li><a href="#FIXME" title="About" class="color-white">about</a></li>
+           <li><a href="#FIXME" title="Services" class="color-white">services</a></li>
+           <li><a href="#FIXME" title="Projects" class="color-white">projects</a></li>
+           <li><a href="#FIXME" title="Our Blogs" class="color-white">our blogs</a></li>
+           <li><a href="#FIXME" title="Contacts" class="color-white">contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header-section__icon-list">
+          <li><a href="#FIXME" title="Twitter" class="icon twitter">twitter</a></li>
+          <li><a href="#FIXME" title="Youtube" class="icon youtube">youtube</a></li>
+          <li><a href="#FIXME" title="Wifi" class="icon wifi">wifi</a></li>
+          <li><a href="#FIXME" title="Facebook" class="icon facebook">facebook</a></li>
+          <li><a href="#FIXME" title="Google" class="icon google">google</a></li>
+        </ul>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <!-- banner section start -->
+ <section class="banner-section">
+  <div class="wrapper">
+    <ul class="banner-section_slider">
+      <li>
+        <figure><img src="https://dummyimage.com/1351x609/474442/fff" alt="Banner-img"></figure>
+        <div class="main-slider">
+          <div class="previous-btn">
+            <a href="#FIXME" title="Previous" class="icon previous">previous</a>
+          </div>
+           <h2 class="heading heading--banner color-white">we meet your financial investment needs</h2>
+          <div class="next-btn">
+            <a href="#FIXME" title="Next" class="icon next color-white">next</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <figure><img src="https://dummyimage.com/1351x609/474442/fff" alt="Banner-img"></figure>
+        <div class="main-slider">
+          <div class="previous-btn">
+            <a href="#FIXME" title="Previous" class="icon previous">previous</a>
+          </div>
+           <h2 class="heading heading--banner color-white">we meet your financial investment needs</h2>
+          <div class="next-btn">
+            <a href="#FIXME" title="Next" class="icon next color-white">next</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+ </section>
+ <!-- service section starts -->
+ <section class="service-section">
+  <div class="wrapper">
+    <h2 class="heading heading--service color-darkgrey">our focus is on iur client success</h2>
+    <ul class="service-section__list">
+      <li>
+        <figure><img src="https://dummyimage.com/62x62/fa610f/fff" alt="Service img"></figure>
+        <div class="service-content">
+          <h3 class="heading heading--list color-darkgrey">private banking</h3>
+          <p class="color-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda expedita nemo asperiores</p>
+          <div class="service-btn">
+            <a href="#FIXME" title="Read More" class="button button--service">read more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <figure><img src="https://dummyimage.com/62x62/fa610f/fff" alt="Service img"></figure>
+        <div class="service-content">
+          <h3 class="heading heading--list color-darkgrey">time saving tips</h3>
+          <p class="color-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda expedita nemo asperiores</p>
+          <div class="service-btn">
+            <a href="#FIXME" title="Read More" class="button button--service">read more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <figure><img src="https://dummyimage.com/62x62/fa610f/fff" alt="Service img"></figure>
+        <div class="service-content">
+          <h3 class="heading heading--list color-darkgrey">budgeting tips</h3>
+          <p class="color-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda expedita nemo asperiores</p>
+          <div class="service-btn">
+            <a href="#FIXME" title="Read More" class="button button--service">read more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <figure><img src="https://dummyimage.com/62x62/fa610f/fff" alt="Service img"></figure>
+        <div class="service-content">
+          <h3 class="heading heading--list color-darkgrey">money saving tips</h3>
+          <p class="color-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda expedita nemo asperiores</p>
+          <div class="service-btn">
+            <a href="#FIXME" title="Read More" class="button button--service">read more</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+ </section>
+ <!-- service section ends -->
+  <!-- banner section end -->
     </main>
     <!--main section end-->
 
@@ -41,6 +140,6 @@
 
   </div>
   <!--container end-->
-  <script src="assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
