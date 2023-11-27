@@ -2,6 +2,7 @@
 .header-section {
     width: 100%;
     background-color: map-get($map: $colors, $key:grey );
+    z-index: 1;
     @include position($position:fixed, $z-index:null, $top:0, $left:0);
 
     .wrapper { @include align($align:center) }
