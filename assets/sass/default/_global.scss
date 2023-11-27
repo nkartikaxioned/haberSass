@@ -1,5 +1,5 @@
 .heading { 
-    @include fontSize($size: 30px, $weight: 600);
+    @include fontSize($size: 30px);
     @include textTransform($transform:uppercase); 
 }
 
@@ -12,7 +12,14 @@ a { text-decoration: none; }
      margin: 0 auto; 
     }
 
-.icon { @include fontSize($size: 0); }
+.icon { 
+  @include fontSize($size: 0); 
+
+  &::before {  
+    font-family: "fontAwesome"; 
+    @include fontSize($size: 25px); 
+  }
+}
 
 .button {  
   padding: 15px;

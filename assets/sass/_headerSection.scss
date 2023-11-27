@@ -1,0 +1,66 @@
+/*! header section style */
+.header-section {
+    width: 100%;
+    background-color: map-get($map: $colors, $key:grey );
+    @include position($position:fixed, $z-index:null, $top:0, $left:0);
+
+    .wrapper { @include align($align:center) }
+    .wrapper,&__icon-list,&__nav-list { @include flex(); }
+
+    .heading--header  {
+        
+
+        & a {
+            padding: 28px 55px;
+            display: block;
+            background-color: map-get($map: $colors, $key: orangeColor);
+            color:  map-get($map: $colors, $key:whiteColor );
+            @include fontSize($size: 50px, $weight:600);
+            @include textTransform($transform: capitalize);
+        }
+    }
+
+    &__nav { width:60%; }
+
+    &__nav-list {
+         width: 100%;
+         @include justify($justify:center);
+        
+        a { padding: 10px 15px;
+            transition: .3s;
+            @include fontSize($size: 14px,$weight:600);
+            @include textTransform($transform: uppercase);
+
+            @include hover-effect($value:995px) {
+                &:hover {
+                 color: map-get($map: $colors, $key: orangeColor);
+                }
+            }
+         }
+    }
+
+    &__icon-list { 
+        width: 20%; 
+        @include justify($justify:end);
+
+        a { 
+            padding: 10px; 
+
+            &::before { transition: .3s; }
+            @include hover-effect($value:995px) {
+                &:hover::before {
+                 color: map-get($map: $colors, $key: orangeColor);
+                }
+            }
+        }
+    }
+
+.icon::before { color: map-get($map: $colors, $key: iconColor); }
+.twitter::before { content: map-get($map: $iconContent, $key: twitter); }
+.youtube::before { content: map-get($map: $iconContent, $key: youtube); }
+.wifi::before { content: map-get($map: $iconContent, $key: wifi); }
+.facebook::before { content: map-get($map: $iconContent, $key: facebook); }
+.google::before { content: map-get($map: $iconContent, $key: google); }
+}
+
+/*! header section style */
